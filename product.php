@@ -328,7 +328,7 @@ function sendMessages($title)
                                     echo $_FILES['pimg']['name'];
                                     $sourceProperties = getimagesize($fileName);
                                     $resizeFileName = uniqid() . time();
-                                    $uploadPath = "product/";
+                                    $uploadPath = dirname(dirname(__FILE__)) . "manage/product/";
                                     $fileExt = pathinfo($_FILES['pimg']['name'], PATHINFO_EXTENSION);
                                     $uploadImageType = $sourceProperties[2];
                                     $sourceImageWidth = $sourceProperties[0];
@@ -360,7 +360,7 @@ function sendMessages($title)
                                             $imageProcess = 0;
                                             break;
                                     }
-
+                                    $uploadPath = "product/";
                                     $pimg = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
                                 }
 
@@ -604,7 +604,7 @@ function sendMessages($title)
                                     $fileName = $_FILES['pimg']['tmp_name'];
                                     $sourceProperties = getimagesize($fileName);
                                     $resizeFileName = time();
-                                    $uploadPath = "product/";
+                                    $uploadPath = dirname(dirname(__FILE__)) . "manage/product/";
                                     $fileExt = pathinfo($_FILES['pimg']['name'], PATHINFO_EXTENSION);
                                     $uploadImageType = $sourceProperties[2];
                                     $sourceImageWidth = $sourceProperties[0];
@@ -636,7 +636,7 @@ function sendMessages($title)
                                             $imageProcess = 0;
                                             break;
                                     }
-
+                                    $uploadPath = "product/";
                                     $url = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
                                     if (!empty($_FILES['prel']['name'][0])) {
                                         $arr = array();
