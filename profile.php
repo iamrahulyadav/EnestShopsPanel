@@ -8,7 +8,6 @@
  	<!-- ////////////////////////////////////////////////////////////////////////////-->
  	<div class="wrapper">
 
-
  		<!-- main menu-->
  		<!--.main-menu(class="#{menuColor} #{menuOpenType}", class=(menuShadow == true ? 'menu-shadow' : ''))-->
  		<?php include('main.php'); ?>
@@ -40,7 +39,6 @@
  													<input type="text" id="cname" class="form-control" name="password" value="<?php echo $getkey['password']; ?>" required>
  												</div>
 
-
  											</div>
 
  											<div class="form-actions">
@@ -55,16 +53,15 @@
 													$username = $_POST['username'];
 													$password = $_POST['password'];
 
-
 													$con->query("update shops set username='" . $username . "',password='" . $password . "' where username='" . $_SESSION['username'] . "'");
-
 												?>
-
- 												<script type="text/javascript">
+ 												<script>
  													$(document).ready(function() {
  														toastr.options.timeOut = 4500; // 1.5s
  														toastr.info('Profile Updated Successfully!!!');
- 														window.location.href = "profile.php";
+ 														setTimeout(function() {
+ 															window.location.href = "profile.php";
+ 														}, 1500);
  													});
  												</script>
  											<?php
@@ -76,18 +73,10 @@
  							</div>
  						</div>
 
-
  					</div>
-
-
-
-
-
 
  				</div>
  			</div>
-
-
 
  		</div>
  	</div>
@@ -97,6 +86,5 @@
 		?>
 
  </body>
-
 
  </html>
