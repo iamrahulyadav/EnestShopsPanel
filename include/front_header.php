@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_URI'] != '/activate.php') {
     <?php
     if ($_SERVER['REQUEST_URI'] != '/activate.php') {
     ?>
-        <title>Login Page - <?php echo $fset['title']; ?></title>
+        <title>Login Page - E-Nest Shops Panel</title>
     <?php } else { ?>
-        <title>Verify Page - <?php echo $fset['title']; ?></title>
+        <title>Verify Page - E-Nest Shops Panel</title>
     <?php } ?>
     <link rel="shortcut icon" href="<?php echo $fset['favicon']; ?>">
     <meta name="apple-mobile-web-app-capable" content="yes">
