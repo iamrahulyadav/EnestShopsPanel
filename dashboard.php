@@ -28,7 +28,7 @@ require 'include/header.php';
                 <div class="card-body" style="padding:10px;">
                   <div class="row" matchheight="card">
 
-                    <div class="col-xl-3 col-lg-6 col-12">
+                    <div class="col-xl-6 col-lg-6 col-12">
                       <div class="card">
                         <a href="productlist.php">
                           <div class="card-content">
@@ -48,7 +48,7 @@ require 'include/header.php';
                       </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-6 col-12">
+                    <div class="col-xl-6 col-lg-6 col-12">
                       <div class="card">
                         <a href="order.php">
                           <div class="card-content">
@@ -68,7 +68,7 @@ require 'include/header.php';
                       </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-6 col-12">
+                    <div class="col-xl-6 col-lg-6 col-12">
                       <div class="card">
                         <a href="order.php">
                           <div class="card-content">
@@ -88,7 +88,7 @@ require 'include/header.php';
                       </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-6 col-12">
+                    <div class="col-xl-6 col-lg-6 col-12">
                       <div class="card">
                         <a href="riderlist.php">
                           <div class="card-content">
@@ -96,7 +96,7 @@ require 'include/header.php';
                               <div class="media">
                                 <div class="media-body text-left">
                                   <h3 class="mb-1 primary"><?php echo $con->query("select * from rider")->num_rows; ?></h3>
-                                  <span>Total Deliv. Boy</span>
+                                  <span>Total Delivery Boy</span>
                                 </div>
                                 <div class="media-right align-self-center">
                                   <i class="fa fa-motorcycle primary font-large-2 float-right"></i>
@@ -116,7 +116,7 @@ require 'include/header.php';
             </div>
           </div>
           <style>
-            .col-xl-3.col-lg-6.col-12>.card {
+            .col-xl-6.col-lg-6.col-12>.card {
               background: aliceblue;
             }
           </style>
