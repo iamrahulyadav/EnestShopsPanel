@@ -382,7 +382,7 @@ function sendMessages($title)
                                             $related = '';
                                         } else {
 
-                                            move_uploaded_file($file_tmp, dirname(dirname(__FILE__)) . "manage/product/" . $file_name);
+                                            move_uploaded_file($file_tmp, "../manage/product/" . $file_name);
                                             $arr[] = "product/" . $file_name;
                                         }
                                     }
@@ -653,7 +653,7 @@ function sendMessages($title)
                                                 $related = '';
                                             } else {
 
-                                                move_uploaded_file($file_tmp, dirname(dirname(__FILE__)) . "manage/product/" . $file_name);
+                                                move_uploaded_file($file_tmp, "../manage/product/" . $file_name);
                                                 $arr[] = "product/" . $file_name;
                                             }
                                         }
