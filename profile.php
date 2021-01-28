@@ -1,6 +1,6 @@
  <?php
 	require 'include/header.php';
-	$getkey = $con->query("select * from admin")->fetch_assoc();
+	$getkey = $con->query("select * from shops where username='" . $_SESSION['username'] . "'")->fetch_assoc();
 	?>
 
  <body data-col="2-columns" class=" 2-columns ">
