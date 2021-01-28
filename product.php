@@ -413,7 +413,7 @@ function sendMessages($title)
                                     $(document).ready(function() {
                                         toastr.options.timeOut = 4500; // 1.5s
 
-                                        toastr.info('Product Update Successfully!!');
+                                        toastr.info('Product Updated Successfully!!');
                                         setTimeout(function() {
                                             window.location.href = "productlist.php";
                                         }, 1500);
