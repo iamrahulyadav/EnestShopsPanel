@@ -46,7 +46,7 @@ if (!empty($_SESSION['username'])) {
                     </ul>
                 </li>
                 <li><a href="order.php"><i class="icon-handbag"></i><span data-i18n="" class="menu-title">Pending Orders</span></a></li>
-                <li><a href="shopprofile.php"><i class="ft-user"></i><span data-i18n="" class="menu-title">Profile</span></a></li>
+                <li><a href="profile.php"><i class="ft-user"></i><span data-i18n="" class="menu-title">Profile</span></a></li>
             </ul>
         </div>
     </div>
