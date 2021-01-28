@@ -328,7 +328,7 @@ function sendMessages($title)
                                     echo $_FILES['pimg']['name'];
                                     $sourceProperties = getimagesize($fileName);
                                     $resizeFileName = uniqid() . time();
-                                    $uploadPath = dirname(dirname(__FILE__)) . "manage/product/";
+                                    $uploadPath = "product/";
                                     $fileExt = pathinfo($_FILES['pimg']['name'], PATHINFO_EXTENSION);
                                     $uploadImageType = $sourceProperties[2];
                                     $sourceImageWidth = $sourceProperties[0];
@@ -339,20 +339,20 @@ function sendMessages($title)
                                         case IMAGETYPE_JPEG:
                                             $resourceType = imagecreatefromjpeg($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagejpeg($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagejpeg($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
                                             break;
 
                                         case IMAGETYPE_GIF:
                                             $resourceType = imagecreatefromgif($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagegif($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagegif($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
                                             break;
 
                                         case IMAGETYPE_PNG:
 
                                             $resourceType = imagecreatefrompng($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagepng($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagepng($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
 
                                             break;
 
@@ -360,7 +360,7 @@ function sendMessages($title)
                                             $imageProcess = 0;
                                             break;
                                     }
-                                    $uploadPath = "product/";
+
                                     $pimg = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
                                 }
 
@@ -604,7 +604,7 @@ function sendMessages($title)
                                     $fileName = $_FILES['pimg']['tmp_name'];
                                     $sourceProperties = getimagesize($fileName);
                                     $resizeFileName = time();
-                                    $uploadPath = dirname(dirname(__FILE__)) . "manage/product/";
+                                    $uploadPath = "product/";
                                     $fileExt = pathinfo($_FILES['pimg']['name'], PATHINFO_EXTENSION);
                                     $uploadImageType = $sourceProperties[2];
                                     $sourceImageWidth = $sourceProperties[0];
@@ -615,20 +615,20 @@ function sendMessages($title)
                                         case IMAGETYPE_JPEG:
                                             $resourceType = imagecreatefromjpeg($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagejpeg($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagejpeg($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
                                             break;
 
                                         case IMAGETYPE_GIF:
                                             $resourceType = imagecreatefromgif($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagegif($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagegif($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
                                             break;
 
                                         case IMAGETYPE_PNG:
 
                                             $resourceType = imagecreatefrompng($fileName);
                                             $imageLayer = resizeImage($resourceType, $sourceImageWidth, $sourceImageHeight, $new_width, $new_height);
-                                            imagepng($imageLayer, $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
+                                            imagepng($imageLayer, "../manage/" . $uploadPath . "thump_" . $resizeFileName . '.' . $fileExt);
 
                                             break;
 
@@ -636,7 +636,7 @@ function sendMessages($title)
                                             $imageProcess = 0;
                                             break;
                                     }
-                                    $uploadPath = "product/";
+
                                     $url = $uploadPath . "thump_" . $resizeFileName . "." . $fileExt;
                                     if (!empty($_FILES['prel']['name'][0])) {
                                         $arr = array();
