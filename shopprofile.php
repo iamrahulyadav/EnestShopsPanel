@@ -60,7 +60,7 @@
  														toastr.options.timeOut = 4500; // 1.5s
  														toastr.info('Profile Updated Successfully!!!');
  														setTimeout(function() {
- 															window.location.href = "profile.php";
+ 															window.location.href = "shopprofile.php";
  														}, 1500);
  													});
  												</script>
