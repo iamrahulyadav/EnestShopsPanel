@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_URI'] != '/activate.php') {
 
 <head>
     <!-- Subhankar Pal | @subho57 -->
-    <meta name="description" content="E-Nest Application Management Panel">
-    <meta name="keywords" content="E-Nest Application Management Panel">
+    <meta name="description" content="E-Nest Shops Panel">
+    <meta name="keywords" content="E-Nest Shops Panel">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
