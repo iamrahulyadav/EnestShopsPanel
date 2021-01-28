@@ -57,7 +57,7 @@ require 'include/header.php';
                                                         <tr>
                                                             <td><?php echo $i; ?></td>
                                                             <td><?php echo $rkl['pname']; ?></td>
-                                                            <td><img src="<?php echo dirname(dirname(__FILE__)) . "/manage/" . $rkl['pimg']; ?>" width="100" height="100" /></td>
+                                                            <td><img src="https://manage.e-nest.in/<?php echo $rkl['pimg']; ?>" width="100" height="100" /></td>
                                                             <td><?php $sb = explode(',', $rkl['prel']);
 
 
@@ -65,7 +65,7 @@ require 'include/header.php';
                                                                     if ($bb == '') {
                                                                     } else {
                                                                 ?>
-                                                                        <img src="<?php echo dirname(dirname(__FILE__)) . "/manage/" . $bb; ?>" width="100" height="100" />
+                                                                        <img src="https://manage.e-nest.in/<?php echo $bb; ?>" width="100" height="100" />
                                                                 <?php
                                                                     }
                                                                 }
