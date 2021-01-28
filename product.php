@@ -144,7 +144,7 @@ function sendMessages($title)
                                                     <div class="form-group">
                                                         <label for="cname">Product Image</label>
                                                         <input type="file" id="pimg" class="form-control" placeholder="Enter Product Image" name="pimg">
-                                                        <img src="<?php echo $selk['pimg']; ?>" width="150" height="150" />
+                                                        <img src="https://manage.e-nest.in/<?php echo $selk['pimg']; ?>" width="150" height="150" />
                                                     </div>
 
                                                     <div class="form-group">
@@ -158,7 +158,7 @@ function sendMessages($title)
                                                             if ($bb == '') {
                                                             } else {
                                                         ?>
-                                                                <img src="<?php echo $bb; ?>" width="100" height="100" />
+                                                                <img src="https://manage.e-nest.in/<?php echo $bb; ?>" width="100" height="100" />
                                                         <?php
                                                             }
                                                         }
@@ -192,7 +192,7 @@ function sendMessages($title)
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="projectinput6">Select SubCategory</label>
+                                                        <label for="projectinput6">Select Subcategory</label>
                                                         <select id="sub_list" name="subcatname" class="form-control">
 
                                                             <?php
@@ -212,7 +212,7 @@ function sendMessages($title)
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="projectinput6">Out OF Stock?</label>
+                                                        <label for="projectinput6">Out Of Stock?</label>
                                                         <select id="projectinput6" name="ostock" class="form-control" required>
 
                                                             <option <?php if ($selk['stock'] == 0) {
@@ -279,7 +279,7 @@ function sendMessages($title)
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="gurl">Product discount(Only Digit)</label>
+                                                        <label for="gurl">Product Discount(Only Digit)</label>
                                                         <input type="text" id="gurl" class="form-control" name="discount_percentage" placeholder="Enter discount in percentage" value="<?php echo $selk['discount']; ?>" required>
 
                                                     </div>
@@ -293,7 +293,7 @@ function sendMessages($title)
                                                 <div class="form-actions">
 
                                                     <button type="submit" name="edit_product" class="btn btn-raised btn-raised btn-primary">
-                                                        <i class="fa fa-check-square-o"></i> Edit Product
+                                                        <i class="fa fa-check-square-o"></i> Update Product
                                                     </button>
                                                 </div>
                                             </form>
