@@ -60,7 +60,7 @@ $user = $con->query("select * from user where id=" . $c['uid'] . "")->fetch_asso
         <tr>
           <td><?php echo $op; ?></td>
           <td><?php echo $pinfo['pname']; ?></td>
-          <td><img src="<?php echo $pinfo['pimg']; ?>" width="100px" /></td>
+          <td><img src="https://manage.e-nest.in/<?php echo $pinfo['pimg']; ?>" width="100px" /></td>
           <td><?php echo $pinfo['discount']; ?></td>
           <td><?php echo $ptype[$i]; ?></td>
           <td><?php echo $pprice[$i]; ?></td>
