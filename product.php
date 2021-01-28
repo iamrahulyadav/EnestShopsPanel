@@ -382,7 +382,7 @@ function sendMessages($title)
                                             $related = '';
                                         } else {
 
-                                            move_uploaded_file($file_tmp, "../manage/product/" . $file_name);
+                                            move_uploaded_file($file_tmp, dirname(dirname(__FILE__)) . "manage/product/" . $file_name);
                                             $arr[] = "product/" . $file_name;
                                         }
                                     }
@@ -484,9 +484,9 @@ function sendMessages($title)
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label for="projectinput6">Select SubCategory</label>
+                                                        <label for="projectinput6">Select Subcategory</label>
                                                         <select id="sub_list" name="subcatname" class="form-control" required>
-                                                            <option value="" selected="" disabled="">Select SubCategory
+                                                            <option value="" selected="" disabled="">Select Subcategory
                                                             </option>
 
 
@@ -495,7 +495,7 @@ function sendMessages($title)
 
 
                                                     <div class="form-group">
-                                                        <label for="projectinput6">Out OF Stock?</label>
+                                                        <label for="projectinput6">Out Of Stock?</label>
                                                         <select id="projectinput6" name="ostock" class="form-control">
 
                                                             <option value="0">Yes</option>
@@ -653,7 +653,7 @@ function sendMessages($title)
                                                 $related = '';
                                             } else {
 
-                                                move_uploaded_file($file_tmp, "../manage/product/" . $file_name);
+                                                move_uploaded_file($file_tmp, dirname(dirname(__FILE__)) . "manage/product/" . $file_name);
                                                 $arr[] = "product/" . $file_name;
                                             }
                                         }
